@@ -19,3 +19,4 @@ sl.text_input(label='',
 placeholder='Add a todo...',key='todo',on_change=add_todo)
     
 
+sl.session_state
