@@ -8,6 +8,8 @@ def add_todo():
 sl.title('My Todo App')
 sl.subheader("let's go boy!")
 sl.write('This app is for productivity!')
+sl.text_input(label='',
+placeholder='Add a todo...',key='todo',on_change=add_todo)
 for index, todo in enumerate(todos):
   check_box = sl.checkbox(todo, key=f'todo:{index}')
   if check_box:
@@ -15,5 +17,3 @@ for index, todo in enumerate(todos):
     write_todo(todos)
     del sl.session_state[f'todo:{index}']
     sl.rerun()
-sl.text_input(label='',
-placeholder='Add a todo...',key='todo',on_change=add_todo)
