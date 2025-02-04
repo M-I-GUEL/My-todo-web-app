@@ -7,7 +7,7 @@ def add_todo():
    write_todo(todos)
 sl.title('My Todo App')
 sl.subheader("let's go boy!")
-sl.write('You are making it boy keep going!')
+sl.write('This app is for productivity!')
 for index, todo in enumerate(todos):
   check_box = sl.checkbox(todo, key=f'todo:{index}')
   if check_box:
