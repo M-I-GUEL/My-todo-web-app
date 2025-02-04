@@ -11,3 +11,5 @@ def write_todo(todos,filepath='todos.txt'):
     '''
     with open(filepath,'w') as file:
         todos= file.writelines(todos)
+if __name__ == 'main':
+    print('Testing')
