@@ -8,6 +8,8 @@ def add_todo():
 sl.title('My Todo App')
 sl.subheader("let's go boy!")
 sl.write('This app is for productivity!')
+sl.write('-Press enter to add To-do')
+sl.write('-Click on checkboxes to complete a To-do')
 sl.text_input(label='',
 placeholder='Add a todo...',key='todo',on_change=add_todo)
 for index, todo in enumerate(todos):
